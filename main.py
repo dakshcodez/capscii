@@ -1,5 +1,3 @@
-#! /usr/bin/env python3
-
 from PIL import Image
 import numpy as np
 
@@ -31,7 +29,7 @@ def render_ascii(ascii_matrix):
 
 def main():
     ascii = "`^\",:;Il!i~+_-?][}{1)(|\\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$"
-    img = Image.open("batman.jpg")
+    img = Image.open("geto.jpeg")
 
     px_arr = np.array(img)
 
