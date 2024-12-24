@@ -10,6 +10,7 @@ def createBrightnessMatrix(pixel_matrix):
 
 def createPixelMatrixFromImage(img):
     px=img.load()
+   # new_image=img.resize((500,300))
     (width,height)=img.size
     pixel_matrix=createPixelMatrix(width,height)
     for x in range(width):
@@ -32,6 +33,14 @@ brightness_matrix=createBrightnessMatrixFromImage(img)
 # #print(pixel_matrix)
 
 # brightness_matrix=[(r+g+b)/3 for row in pixel_matrix for (r,g,b) in row]
-print(brightness_matrix)
+#print(brightness_matrix)
+
+string ="`^\",:;Il!i~+_-?][}{1)(|\\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$"
+
+
+ascii_matrix=[string[int(brightness*(len(string)-1)/255)] for brightness in brightness_matrix]
+
+#print(ascii_matrix)
+print("".join(ascii_matrix))
 
 
