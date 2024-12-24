@@ -14,3 +14,4 @@ for x in range(width):
 brightness_matrix=[(r+g+b)/3 for row in pixel_matrix for (r,g,b) in row]
 print(brightness_matrix)
 
+# test
